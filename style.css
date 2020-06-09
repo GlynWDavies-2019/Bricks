@@ -1,0 +1,78 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Reset */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Application Styles */
+
+body {
+    align-items: center;
+    background-color: #0095DD;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato',sans-serif;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 45px;
+}
+
+canvas {
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    display: block;
+}
+
+.btn {
+    background-color: #000000;
+    border: 0;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:hover {
+    background-color: #222222;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.rules-btn {
+    left: 30px;
+    position: absolute;
+    top: 30px;
+}
+
+.rules {
+    background-color: #333333;
+    color: #FFFFFF;
+    left: 0;
+    line-height: 1.5;
+    min-height: 100vh;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    transform: translateX(-400px);
+    transition: transform 1s ease-in-out;
+    width: 400px;
+}
+
+.rules.show {
+    transform: translateX(0);
+}
